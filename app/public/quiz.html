@@ -211,8 +211,7 @@
                   </div>
                 </div>
               </div>
-        
-              
+               
               <a class="left carousel-control" href="#quiz" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 <span class="sr-only">Previous</span>
@@ -273,9 +272,10 @@ function diff(a,b){return Math.abs(a-b);}
       var isValid = true;
 
       $('.form-control').each(function() {
-        if ($(this).val() === '')
+        if ($(this).val() === ''){
             console.log("no name")
             isValid = false;
+          }
       });
 
       $('.radio').each(function() {
