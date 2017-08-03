@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder</title>
+
+ <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  <div class="container" >
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> How To Use:</h4>
+     
+        <h5> Select a number that best represents you. 5 is Strongly Agree and 1 is Strongly Disagree. 
+        <br>
+            Once you have answered a question push the arrow on the right to move to the next one.</h5>
+      </div>
+      <div class="panel-body">
+        <form role="form">
+          <div id="quiz" class="carousel slide" data-ride="carousel" data-interval="false" style="border: solid #000 1px; height: 300px; width: 100%">
+            
+            <ol class="carousel-indicators" >
+              <li data-target="#quiz" data-slide-to="0" class="active" style="background-color: #000"></li>
+              <li data-target="#quiz" data-slide-to="1" style="background-color: #000"></li>
+              <li data-target="#quiz" data-slide-to="2" style="background-color: #000"></li>
+              <li data-target="#quiz" data-slide-to="3" style="background-color: #000"></li>
+              <li data-target="#quiz" data-slide-to="4" style="background-color: #000"></li>
+              <li data-target="#quiz" data-slide-to="5" style="background-color: #000"></li>
+              <li data-target="#quiz" data-slide-to="6" style="background-color: #000"></li>
+              <li data-target="#quiz" data-slide-to="7" style="background-color: #000"></li>
+              <li data-target="#quiz" data-slide-to="8" style="background-color: #000"></li>
+              <li data-target="#quiz" data-slide-to="9" style="background-color: #000"></li>
+              <li data-target="#quiz" data-slide-to="10" style="background-color: #000"></li>
+              <li data-target="#quiz" data-slide-to="11" style="background-color: #000"></li>
+            </ol>
+            
+            <div class="carousel-inner" style="height: 100%">
+
+              <div class="item active">
+                <div class="form-group" style="width: 50%; margin: 80px auto">
+                <h4 class="text-center">What is your full name?</h4>
+                <hr>
+                  <label for="name"></label>
+                  <input type="text" class="form-control" id="name">
+                </div> 
+              </div>
+
+              <div class="item">
+                <div style="margin: 100px auto">
+                  <h4 class="text-center">You have seen every episode of Futurama</h4>
+                  <div style="width: 200px; margin: 10px auto">
+                    <hr>
+                    <div class="form-group radio" id="q1">
+                      <label class="radio-inline"><input type="radio" name="q1" value="1">1</label>
+                      <label class="radio-inline"><input type="radio" name="q1" value="2">2</label>
+                      <label class="radio-inline"><input type="radio" name="q1" value="3">3</label>
+                      <label class="radio-inline"><input type="radio" name="q1" value="4">4</label>
+                      <label class="radio-inline"><input type="radio" name="q1" value="5">5</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div style="margin: 100px auto">
+                  <h4 class="text-center">You like musical theater</h4>
+                  <div style="width: 200px; margin: 10px auto">
+                    <hr>
+                    <div class="form-group radio" id="q2">
+                      <label class="radio-inline"><input type="radio" name="q2" value="1">1</label>
+                      <label class="radio-inline"><input type="radio" name="q2" value="2">2</label>
+                      <label class="radio-inline"><input type="radio" name="q2" value="3">3</label>
+                      <label class="radio-inline"><input type="radio" name="q2" value="4">4</label>
+                      <label class="radio-inline"><input type="radio" name="q2" value="5">5</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div style="margin: 100px auto">
+                  <h4 class="text-center">Hanging out with large groups is fun</h4>
+                  <div style="width: 200px; margin: 10px auto">
+                    <hr>
+                    <div class="form-group radio" id="q3">
+                      <label class="radio-inline"><input type="radio" name="q3" value="1">1</label>
+                      <label class="radio-inline"><input type="radio" name="q3" value="2">2</label>
+                      <label class="radio-inline"><input type="radio" name="q3" value="3">3</label>
+                      <label class="radio-inline"><input type="radio" name="q3" value="4">4</label>
+                      <label class="radio-inline"><input type="radio" name="q3" value="5">5</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div style="margin: 100px auto">
+                  <h4 class="text-center">Hot fries give you gas</h4>
+                  <div style="width: 200px; margin: 10px auto">
+                    <hr>
+                    <div class="form-group radio" id="q4">
+                      <label class="radio-inline"><input type="radio" name="q4" value="1">1</label>
+                      <label class="radio-inline"><input type="radio" name="q4" value="2">2</label>
+                      <label class="radio-inline"><input type="radio" name="q4" value="3">3</label>
+                      <label class="radio-inline"><input type="radio" name="q4" value="4">4</label>
+                      <label class="radio-inline"><input type="radio" name="q4" value="5">5</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div style="margin: 100px auto">
+                  <h4 class="text-center">Baseball is interesting to watch</h4>
+                  <div style="width: 200px; margin: 10px auto">
+                    <hr>
+                    <div class="form-group radio" id="q5">
+                      <label class="radio-inline"><input type="radio" name="q5" value="1">1</label>
+                      <label class="radio-inline"><input type="radio" name="q5" value="2">2</label>
+                      <label class="radio-inline"><input type="radio" name="q5" value="3">3</label>
+                      <label class="radio-inline"><input type="radio" name="q5" value="4">4</label>
+                      <label class="radio-inline"><input type="radio" name="q5" value="5">5</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div style="margin: 100px auto">
+                  <h4 class="text-center">Horror movies are entertaining</h4>
+                  <div style="width: 200px; margin: 10px auto">
+                    <hr>
+                    <div class="form-group radio" id="q6">
+                      <label class="radio-inline"><input type="radio" name="q6" value="1">1</label>
+                      <label class="radio-inline"><input type="radio" name="q6" value="2">2</label>
+                      <label class="radio-inline"><input type="radio" name="q6" value="3">3</label>
+                      <label class="radio-inline"><input type="radio" name="q6" value="4">4</label>
+                      <label class="radio-inline"><input type="radio" name="q6" value="5">5</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div style="margin: 100px auto">
+                  <h4 class="text-center">You were sad when the tv show Frineds ended</h4>
+                  <div style="width: 200px; margin: 10px auto">
+                    <hr>
+                    <div class="form-group radio" id="q7">
+                      <label class="radio-inline"><input type="radio" name="q7" value="1">1</label>
+                      <label class="radio-inline"><input type="radio" name="q7" value="2">2</label>
+                      <label class="radio-inline"><input type="radio" name="q7" value="3">3</label>
+                      <label class="radio-inline"><input type="radio" name="q7" value="4">4</label>
+                      <label class="radio-inline"><input type="radio" name="q7" value="5">5</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div style="margin: 100px auto">
+                  <h4 class="text-center">You prefer Coffee over soda</h4>
+                  <div style="width: 200px; margin: 10px auto">
+                    <hr>
+                    <div class="form-group radio" id="q8">
+                      <label class="radio-inline"><input type="radio" name="q8" value="1">1</label>
+                      <label class="radio-inline"><input type="radio" name="q8" value="2">2</label>
+                      <label class="radio-inline"><input type="radio" name="q8" value="3">3</label>
+                      <label class="radio-inline"><input type="radio" name="q8" value="4">4</label>
+                      <label class="radio-inline"><input type="radio" name="q8" value="5">5</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div style="margin: 100px auto">
+                  <h4 class="text-center">You have been to an X-files convention</h4>
+                  <div style="width: 200px; margin: 10px auto">
+                    <hr>
+                    <div class="form-group radio" id="q9">
+                      <label class="radio-inline"><input type="radio" name="q9" value="1">1</label>
+                      <label class="radio-inline"><input type="radio" name="q9" value="2">2</label>
+                      <label class="radio-inline"><input type="radio" name="q9" value="3">3</label>
+                      <label class="radio-inline"><input type="radio" name="q9" value="4">4</label>
+                      <label class="radio-inline"><input type="radio" name="q9" value="5">5</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div style="margin: 100px auto">
+                  <h4 class="text-center">Malcom Reynolds was the best Captain of the USS Enterprise</h4>
+                  <div style="width: 200px; margin: 10px auto">
+                    <hr>
+                    <div class="form-group radio" id="q10">
+                      <label class="radio-inline"><input type="radio" name="q10" value="1">1</label>
+                      <label class="radio-inline"><input type="radio" name="q10" value="2">2</label>
+                      <label class="radio-inline"><input type="radio" name="q10" value="3">3</label>
+                      <label class="radio-inline"><input type="radio" name="q10" value="4">4</label>
+                      <label class="radio-inline"><input type="radio" name="q10" value="5">5</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div style="margin: 60px auto">
+                  <h2 class="text-center">Thanks for taking the quiz!</h2>
+                  <h3 class="text-center">Now submit it and see if we can be friends</h3>
+                  <hr>
+                  <div style="width: 70px; margin: 10px auto">
+                    <button type="submit" class="btn btn-primary submit">Submit</button>
+                  </div>
+                </div>
+              </div>
+        
+              
+              <a class="left carousel-control" href="#quiz" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#quiz" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>    
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="dumbModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"></button>
+          <h2 class="modal-title"><strong id="resTitle"></strong></h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="modalName"></h2>
+          <hr>
+          <h3 id="modalText"></h3>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a> | <a href="/api/results">API Link</a></p>
+    </div>
+  </footer>
+
+
+<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+<script type="text/javascript">
+var totalDiff = 0;
+function diff(a,b){return Math.abs(a-b);}
+
+    $(".submit").on("click", function(event) {
+      
+      event.preventDefault();
+      // Here we grab the form elements
+
+      // Form validation
+      function validateForm() {
+      var isValid = true;
+
+      $('.form-control').each(function() {
+        if ($(this).val() === '')
+            console.log("no name")
+            isValid = false;
+      });
+
+      $('.radio').each(function() {
+        var a = $(this).attr('id');
+        if(!$("#" + a + " input:radio:checked").val())
+          console.log(a + " radial isn't selected")
+          isValid = false
+      })
+      console.log(isValid);
+      return isValid;
+    }
+
+    // If all required fields are filled
+    if (validateForm() == true){
+      var quizResults = {
+        name: $("#name").val().trim(),
+        scores: [
+          parseInt($("#q1 input:radio:checked").val()),
+          parseInt($("#q2 input:radio:checked").val()),
+          parseInt($("#q3 input:radio:checked").val()),
+          parseInt($("#q4 input:radio:checked").val()),
+          parseInt($("#q5 input:radio:checked").val()),
+          parseInt($("#q6 input:radio:checked").val()),          
+          parseInt($("#q7 input:radio:checked").val()),
+          parseInt($("#q8 input:radio:checked").val()),
+          parseInt($("#q9 input:radio:checked").val()),
+          parseInt($("#q10 input:radio:checked").val())
+        ]
+      };
+
+      $.post("api/results", quizResults,
+        function(data) {
+         
+           var myRes = data[0].scores;
+           var theirRes = quizResults.scores
+           
+           for (i = 0; i < myRes.length; i++){
+              totalDiff += diff(parseInt(myRes[i]), parseInt(theirRes[i]))
+              console.log(totalDiff)
+           }
+           var resName = quizResults.name;
+           var resText;
+           var resTitle;
+
+           if(totalDiff === 0){
+              resTitle = "We Are The Same Person!";
+              resText = "It appears that you answered the exact same as me. So logically we basically the same person. Well done you... for being me.";
+           }
+           else if(totalDiff > 6){
+              resTitle = "We Should Probaby Not Be Friends";
+              resText = "Well, it looks like we just aren't destined to be friends... maybe in the next life.";
+           }
+            else {
+              resTitle = "Hey! We Could Be Friends.";
+              resText = "Looks like we could be friends. This doesn't mean we will be, but at least there is a possibility of it... right?  ";
+           }
+
+          // If(totalDiff === )
+          $("#resTitle").text(resTitle);
+          $("#modalName").text(resName);
+          $("#modalText").text(resText);
+          $("#dumbModal").modal('toggle');
+          $("#name").val("");
+        });     
+      }
+      else
+    {
+      alert("Please fill out all fields before submitting!");
+    }
+      
+      return false;
+    });
+</script>
+
+</body>
+</html>
